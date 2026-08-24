@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* ===== Fixed header at top ===== */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #2d3436;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 100;
+}
+
+/* ===== Layout wrapper below the fixed header ===== */
+.layout {
+  display: flex;
+  margin-top: 60px;     /* space for fixed header */
+  min-height: calc(100vh - 60px);
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 220px;
+  background-color: #353b48;
+  height: calc(100vh - 60px);  /* full screen height minus header */
+  position: sticky;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.sidebar a {
+  color: #dcdde1;
+  text-decoration: none;
+  padding: 12px 25px;
+}
+
+.sidebar a:hover {
+  background-color: #487eb0;
+  color: #ffffff;
+}
+
+/* ===== Main content area ===== */
+.content {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: flex-start;
+}
+
+.content-box {
+  background-color: #ffffff;
+  flex: 1 1 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.content-box h2 {
+  margin-bottom: 10px;
+  color: #2d3436;
+}
+
+.content-box p {
+  color: #636e72;
+  line-height: 1.5;
+}
+
+/* ===== Responsive: stack sidebar above content ===== */
+@media (max-width: 700px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
