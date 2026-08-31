@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+</head>
+
+<body>
+
+    <h1>Payment Form</h1>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <td>
+                    <label for="cardholder">
+                        Cardholder Name:
+                    </label>
+                </td>
+                <td>
+                    <input
+                        type="text"
+                        id="cardholder"
+                        name="cardholder"
+                        required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="cardnumber">
+                        Card Number:
+                    </label>
+                </td>
+                <td>
+                    <input
+                        type="text"
+                        id="cardnumber"
+                        name="cardnumber"
+                        required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="expiry">
+                        Expiry Date:
+                    </label>
+                </td>
+                <td>
+                    <input
+                        type="month"
+                        id="expiry"
+                        name="expiry"
+                        required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="cvv">
+                        CVV:
+                    </label>
+                </td>
+                <td>
+                    <input
+                        type="password"
+                        id="cvv"
+                        name="cvv"
+                        required>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Pay Now">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
