@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+header, footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Arrange boxes horizontally using Flexbox */
+.box-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 20px;
+}
+
+.box-wrap {
+  text-align: center;
+}
+
+.box-wrap p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #2980b9;
+  transition: all 0.4s ease; /* smooth transformation on hover */
+}
+
+/* rotate() transformation */
+.rotate-box:hover {
+  transform: rotate(45deg);
+  background-color: #e74c3c;
+}
+
+/* scale() transformation */
+.scale-box:hover {
+  transform: scale(1.4);
+  background-color: #27ae60;
+}
+
+/* translate() transformation */
+.translate-box:hover {
+  transform: translate(20px, -20px);
+  background-color: #f39c12;
+}
+
+/* skew() transformation */
+.skew-box:hover {
+  transform: skew(20deg, 10deg);
+  background-color: #8e44ad;
+}

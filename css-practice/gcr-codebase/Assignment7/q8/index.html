@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q8 - Box Model Exploration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Box Model Exploration Page</h1>
+  </header>
+
+  <main class="container">
+    <!-- Default box-sizing box model layers -->
+    <div class="model-wrap">
+      <h2>Default box-sizing (content-box)</h2>
+      <div class="margin-layer">
+        <span class="layer-label">margin</span>
+        <div class="border-layer">
+          <span class="layer-label">border</span>
+          <div class="padding-layer">
+            <span class="layer-label">padding</span>
+            <div class="content-layer">content</div>
+          </div>
+        </div>
+      </div>
+      <p class="desc">With content-box (the default), width/height apply
+      only to the content area. Padding and border are added on top,
+      increasing the total rendered size of the box.</p>
+    </div>
+
+    <!-- box-sizing: border-box example -->
+    <div class="model-wrap">
+      <h2>box-sizing: border-box</h2>
+      <div class="margin-layer">
+        <span class="layer-label">margin</span>
+        <div class="border-layer bb">
+          <span class="layer-label">border</span>
+          <div class="padding-layer">
+            <span class="layer-label">padding</span>
+            <div class="content-layer">content</div>
+          </div>
+        </div>
+      </div>
+      <p class="desc">With border-box, the specified width/height
+      already include padding and border, keeping the total box size
+      fixed regardless of padding changes.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Khush Nagpal</p>
+  </footer>
+</body>
+</html>
