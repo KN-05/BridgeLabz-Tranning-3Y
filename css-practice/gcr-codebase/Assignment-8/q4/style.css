@@ -1,0 +1,129 @@
+/* ===== Reset & base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* ===== Header & footer ===== */
+header, footer {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #1f2937;
+  color: #d1d5db;
+  font-size: 0.85rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.practice-section {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.practice-section h2 {
+  color: #4f46e5;
+  margin-bottom: 0.8rem;
+}
+
+/* ===== Element selector: targets every <p> globally with base spacing ===== */
+p {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Class selector ===== */
+.highlight {
+  background-color: #fef08a;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* ===== ID selector ===== */
+#special-note {
+  border-left: 4px solid #10b981;
+  padding-left: 0.8rem;
+  font-style: italic;
+  background-color: #ecfdf5;
+}
+
+/* ===== Attribute selectors ===== */
+a[target="_blank"] {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+input[type="text"] {
+  margin-top: 0.6rem;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* ===== Combinators section ===== */
+.combo-block {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border: 1px dashed #d1d5db;
+  border-radius: 8px;
+}
+
+.combo-block h3 {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+/* Child combinator: only direct <li> children of .parent-list */
+.parent-list > li {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+/* Adjacent sibling combinator: only the <p> immediately after an <h4> */
+h4 + p {
+  background-color: #dbeafe;
+  padding: 0.4rem;
+  border-radius: 4px;
+}
+
+/* General sibling combinator: all <p> siblings after an <h4> within the same parent */
+h4 ~ p {
+  border-left: 3px solid #93c5fd;
+  padding-left: 0.6rem;
+}
+
+/* Descendant combinator: any <p> nested anywhere inside .outer-box */
+.outer-box p {
+  color: #047857;
+  font-weight: 600;
+}
+
+.outer-box {
+  background-color: #f0fdf4;
+  padding: 0.8rem;
+  border-radius: 6px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Components Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>User Interface Components</h1>
+    <p>Search bar, buttons, and dropdown menu in a card layout</p>
+  </header>
+
+  <main class="ui-main">
+    <section class="ui-card">
+
+      <!-- Search bar -->
+      <div class="ui-group">
+        <label for="search">Search</label>
+        <input type="text" id="search" class="ui-input" placeholder="Type to search..." />
+      </div>
+
+      <!-- Dropdown menu -->
+      <div class="ui-group">
+        <label for="category">Category</label>
+        <select id="category" class="ui-select">
+          <option>All Categories</option>
+          <option>Electronics</option>
+          <option>Clothing</option>
+          <option>Books</option>
+        </select>
+      </div>
+
+      <!-- Buttons -->
+      <div class="ui-group buttons-row">
+        <button class="ui-btn ui-btn-primary">Search</button>
+        <button class="ui-btn ui-btn-outline">Clear</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 UI Components Demo</p>
+  </footer>
+</body>
+</html>

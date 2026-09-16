@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pseudo-Classes Demonstration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>CSS Pseudo-Classes Demonstration</h1>
+    <p>Examples of :hover, :focus, :active, and :nth-child()</p>
+  </header>
+
+  <main class="demo-row">
+
+    <!-- :hover example on a link -->
+    <section class="demo-card">
+      <h2>:hover</h2>
+      <a href="#" class="demo-link">Hover over me</a>
+      <p class="explain">Changes color and background when the mouse hovers over the link.</p>
+    </section>
+
+    <!-- :focus example on a button -->
+    <section class="demo-card">
+      <h2>:focus</h2>
+      <button class="demo-btn">Tab or click me</button>
+      <p class="explain">Shows a glowing outline when the button receives keyboard/mouse focus.</p>
+    </section>
+
+    <!-- :active example on a button -->
+    <section class="demo-card">
+      <h2>:active</h2>
+      <button class="demo-btn active-demo">Click and hold</button>
+      <p class="explain">Changes appearance while the button is being actively clicked.</p>
+    </section>
+
+    <!-- :nth-child() example on a list -->
+    <section class="demo-card">
+      <h2>:nth-child()</h2>
+      <ul class="demo-list">
+        <li>List item one</li>
+        <li>List item two</li>
+        <li>List item three</li>
+        <li>List item four</li>
+        <li>List item five</li>
+      </ul>
+      <p class="explain">Every even list item gets a shaded background using :nth-child(even).</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Pseudo-Class Demo</p>
+  </footer>
+</body>
+</html>

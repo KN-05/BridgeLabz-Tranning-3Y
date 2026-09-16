@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Selectors Practice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Practice Page</h1>
+    <p>Element, class, ID, attribute, and combinator selectors</p>
+  </header>
+
+  <main>
+    <section class="practice-section">
+      <h2>Element Selector</h2>
+      <p>This paragraph is styled using a plain element selector (targets all &lt;p&gt; tags).</p>
+    </section>
+
+    <section class="practice-section">
+      <h2>Class Selector</h2>
+      <p class="highlight">This paragraph has a class of "highlight" and gets a yellow background.</p>
+      <p class="highlight">This one shares the same class too.</p>
+    </section>
+
+    <section class="practice-section">
+      <h2>ID Selector</h2>
+      <p id="special-note">This paragraph has a unique ID and gets a special border.</p>
+    </section>
+
+    <section class="practice-section">
+      <h2>Attribute Selector</h2>
+      <a href="https://example.com" target="_blank">External link (opens in new tab)</a>
+      <br />
+      <input type="text" placeholder="Text input styled by attribute selector" />
+    </section>
+
+    <section class="practice-section">
+      <h2>Combinators</h2>
+
+      <div class="combo-block">
+        <h3>Child combinator (&gt;)</h3>
+        <ul class="parent-list">
+          <li>Direct child item</li>
+          <li>Direct child item
+            <ul>
+              <li>Nested item (not a direct child of parent-list)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="combo-block">
+        <h3>Adjacent sibling combinator (+)</h3>
+        <h4>Heading</h4>
+        <p>This paragraph comes immediately after the heading above.</p>
+        <p>This second paragraph is not affected by the adjacent sibling rule.</p>
+      </div>
+
+      <div class="combo-block">
+        <h3>General sibling combinator (~)</h3>
+        <h4>Marker heading</h4>
+        <p>This paragraph is a general sibling of the marker heading.</p>
+        <p>So is this one, even though it's further away.</p>
+      </div>
+
+      <div class="combo-block">
+        <h3>Descendant combinator (space)</h3>
+        <div class="outer-box">
+          <p>This paragraph is nested inside .outer-box and gets styled.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CSS Selectors Practice</p>
+  </footer>
+</body>
+</html>

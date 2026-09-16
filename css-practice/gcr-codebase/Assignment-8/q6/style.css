@@ -1,0 +1,121 @@
+/* ===== Reset & base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+.site-header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.site-header h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.site-header p {
+  color: #6b7280;
+}
+
+/* ===== Main area: center animations vertically and horizontally ===== */
+.animation-area {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 1.5rem;
+}
+
+.animation-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 180px;
+  height: 180px;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.explain {
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* ===== Moving box animation ===== */
+.moving-box {
+  width: 50px;
+  height: 50px;
+  background-color: #4f46e5;
+  border-radius: 8px;
+  animation: moveBox 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveBox {
+  from { transform: translateX(-40px); }
+  to { transform: translateX(40px); }
+}
+
+/* ===== Bouncing ball animation ===== */
+.bouncing-ball {
+  width: 40px;
+  height: 40px;
+  background-color: #10b981;
+  border-radius: 50%;
+  animation: bounce 1.2s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
+}
+
+/* ===== Color-changing text animation ===== */
+.color-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+  animation: colorChange 3s ease-in-out infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes colorChange {
+  0%   { color: #ef4444; }
+  33%  { color: #3b82f6; }
+  66%  { color: #10b981; }
+  100% { color: #f59e0b; }
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #1f2937;
+  color: #d1d5db;
+  font-size: 0.85rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  .animation-area {
+    flex-direction: column;
+  }
+}
