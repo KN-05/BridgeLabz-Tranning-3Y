@@ -1,0 +1,8 @@
+.list-group-item {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+.badge.fs-6 {
+  padding: 0.5rem 0.9rem;
+}

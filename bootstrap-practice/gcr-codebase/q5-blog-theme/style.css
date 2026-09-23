@@ -1,0 +1,47 @@
+/* Override Bootstrap theme variables for a custom purple blog theme */
+:root {
+  --bs-primary: #7b4b94;
+  --bs-font-sans-serif: 'Lora', Georgia, serif;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  background-color: #faf7fb;
+  color: #3d2c40;
+}
+
+.site-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #7b4b94;
+  font-size: 3rem;
+}
+
+.blog-card {
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  color: #3d2c40;
+}
+
+/* Themed button using our overridden primary color */
+.btn-theme {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+}
+
+.btn-theme:hover {
+  background-color: #5f3a75;
+  border-color: #5f3a75;
+  color: #fff;
+}
+
+footer {
+  background-color: #f0e9f2;
+  color: #7b4b94;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Notifications</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+<header class="bg-dark text-white py-3 mb-4">
+  <div class="container">
+    <h1 class="h4 mb-0">📋 My Dashboard</h1>
+  </div>
+</header>
+
+<main class="container pb-5">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h2 class="h5 mb-4">Notifications</h2>
+
+      <!-- Success alert -->
+      <div class="alert alert-success" role="alert">
+        <strong>✔ Success!</strong> Your profile changes have been saved.
+      </div>
+
+      <!-- Info alert -->
+      <div class="alert alert-info" role="alert">
+        <strong>💡 Tip:</strong> You can enable two-factor authentication in Settings for extra security.
+      </div>
+
+      <!-- Danger alert, dismissible -->
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>⚠ Warning:</strong> You have 3 new unread messages awaiting a reply.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <!-- Summary well -->
+      <div class="bg-light border rounded-3 p-4 mt-4">
+        <h3 class="h6 fw-bold mb-2">Summary</h3>
+        <p class="mb-0 text-muted">
+          You have 1 pending update, 1 helpful tip, and 3 unread messages.
+          Review your notifications regularly to stay on top of important account activity.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="text-center text-muted small pb-4">
+  &copy; 2026 Dashboard App
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

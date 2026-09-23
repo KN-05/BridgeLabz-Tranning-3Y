@@ -1,0 +1,21 @@
+/* Product card hover effects using shadow-sm base + custom transition */
+
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: none;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-card img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}

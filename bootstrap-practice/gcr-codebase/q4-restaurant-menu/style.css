@@ -1,0 +1,17 @@
+.menu-header {
+  background: linear-gradient(135deg, #6c584c 0%, #a98467 100%);
+}
+
+figcaption {
+  font-size: 0.95rem;
+}
+
+.table thead th {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.list-group-item {
+  border-left: none;
+  border-right: none;
+}

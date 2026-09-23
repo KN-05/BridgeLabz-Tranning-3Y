@@ -1,0 +1,25 @@
+.pricing-card {
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+}
+
+.pricing-pro {
+  transform: scale(1.05);
+}
+
+.pricing-pro:hover {
+  transform: scale(1.05) translateY(-8px);
+}
+
+.pricing-card ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pricing-pro ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}

@@ -1,0 +1,34 @@
+/* Custom polish for the portfolio page */
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+header h1 {
+  color: #212529;
+}
+
+img.rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.btn-primary:hover {
+  background-color: #574fd6;
+  border-color: #574fd6;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff;
+}
+
+form .form-control:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+}

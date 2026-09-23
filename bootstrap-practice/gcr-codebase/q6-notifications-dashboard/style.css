@@ -1,0 +1,12 @@
+.card {
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.alert {
+  border-radius: 0.5rem;
+}
+
+.alert strong {
+  margin-right: 4px;
+}
