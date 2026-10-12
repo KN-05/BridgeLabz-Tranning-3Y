@@ -1,5 +1,3 @@
-// Q6. Progressive Discount System
-
 const totalPurchase = 6500;
 
 let discountPercent;

@@ -1,6 +1,4 @@
-// Q4. Academic Performance Evaluator
-
-const marks = [78, 85, 90, 66, 72];        // 5 subjects, each out of 100
+const marks = [78, 85, 90, 66, 72];       
 const maxMarksPerSubject = 100;
 
 let totalMarks = 0;
@@ -8,7 +6,7 @@ let anyFailedSubject = false;
 
 for (const mark of marks) {
   totalMarks += mark;
-  if (mark < 35) anyFailedSubject = true;  // validation: any subject < 35
+  if (mark < 35) anyFailedSubject = true;  
 }
 
 const average = totalMarks / marks.length;
@@ -21,6 +19,6 @@ if (anyFailedSubject || percentage < 50) {
   console.log("Detained");
 } else if (percentage >= 85) {
   console.log("Promoted with Distinction");
-} else {                                   // 50% to below 85%
+} else {                                 
   console.log("Promoted");
 }

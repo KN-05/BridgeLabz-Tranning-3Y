@@ -1,8 +1,8 @@
 // Q5. Weather Activity Planner
 
-const temperature = 12;   // in °C
+const temperature = 12;  
 const isRaining = false;
-const windSpeed = 25;     // in km/h
+const windSpeed = 25;     
 
 if (isRaining) {
   console.log("Stay indoors with hot coffee.");

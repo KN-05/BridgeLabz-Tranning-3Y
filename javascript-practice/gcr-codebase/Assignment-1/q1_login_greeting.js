@@ -1,12 +1,10 @@
-// Q1. Personalized Login Greeting
-
-const userName = "Khush";                 // user's name
-const currentHour = new Date().getHours(); // current hour (0-23)
+const userName = "Khush";                 
+const currentHour = new Date().getHours(); 
 
 let greeting;
 if (currentHour < 12) {
   greeting = `Good Morning ${userName}!`;
-} else if (currentHour <= 17) {            // 12 to 17
+} else if (currentHour <= 17) {
   greeting = `Good Afternoon ${userName}!`;
 } else {
   greeting = `Good Evening ${userName}!`;

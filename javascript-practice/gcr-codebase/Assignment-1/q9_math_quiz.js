@@ -1,5 +1,3 @@
-// Q9. Random Math Quiz Generator
-
 const operators = ['+', '-', '*', '/'];
 
 const num1 = Math.floor(Math.random() * 20) + 1;   // 1-20
@@ -18,7 +16,7 @@ switch (operator) {
     answer = num1 * num2;
     break;
   case '/':
-    answer = (num1 / num2).toFixed(2);   // 2 decimals for division
+    answer = (num1 / num2).toFixed(2);
     break;
   default:
     answer = "Invalid operator";
