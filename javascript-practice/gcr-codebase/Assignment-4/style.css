@@ -1,0 +1,10 @@
+body { font-family: system-ui, sans-serif; max-width: 460px; margin: 40px auto; padding: 0 16px; color: #222; }
+h2 { margin-bottom: 16px; }
+label { display: block; margin-top: 14px; font-weight: 600; }
+input, select, textarea { width: 100%; padding: 8px; margin-top: 4px; border: 2px solid #bbb; border-radius: 4px; box-sizing: border-box; font: inherit; }
+input.valid { border-color: #2e9e4f; }
+input.invalid { border-color: #d93025; }
+.error { color: #d93025; font-size: 13px; min-height: 16px; display: block; }
+button { margin-top: 18px; padding: 10px 20px; border: 0; border-radius: 4px; background: #1f4e79; color: #fff; font: inherit; cursor: pointer; }
+.box { margin-top: 20px; padding: 12px; background: #f1f4f8; border-radius: 4px; white-space: pre-wrap; }
+.success { color: #2e9e4f; font-weight: 600; }
