@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q1 - Product List Manager</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; }
+    #productList { list-style: none; padding: 0; }
+    #productList li { display: flex; align-items: center; gap: 8px; padding: 8px; border-bottom: 1px solid #ddd; }
+    .name { flex: 1; }
+    .edit-field { flex: 1; padding: 4px; }
+    button { cursor: pointer; padding: 4px 10px; }
+  </style>
+</head>
+<body>
+  <h2>Product List Manager</h2>
+  <input type="text" id="productInput" placeholder="Enter product name">
+  <button id="addBtn">Add</button>
+  <ul id="productList"></ul>
+  <script src="q1.js"></script>
+</body>
+</html>
